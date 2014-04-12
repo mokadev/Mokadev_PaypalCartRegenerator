@@ -1,1 +1,3 @@
 #Mokadev_PaypalCartRegenerator
+app/etc/modules/Mokadev_PaypalCartRegenerator.xml                                app/etc/modules/Mokadev_PaypalCartRegenerator.xml
+app/code/community/Mokadev/PaypalCartRegenerator/                                app/code/community/Mokadev/PaypalCartRegenerator/
