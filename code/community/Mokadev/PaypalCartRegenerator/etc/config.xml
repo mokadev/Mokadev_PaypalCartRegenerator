@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mokadev_PaypalCartRegenerator>
+            <version>0.1.0</version>
+        </Mokadev_PaypalCartRegenerator>
+    </modules>
+    <global>
+        <models>
+            <paypalcartregenerator>
+                <class>Mokadev_PaypalCartRegenerator_Model</class>
+            </paypalcartregenerator>
+        </models>
+        <helpers>
+            <paypalcartregenerator>
+                <class>Mokadev_PaypalCartRegenerator_Helper</class>
+            </paypalcartregenerator>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_postdispatch_paypal_standard_cancel>
+                <observers>
+                    <paypal_cancel_cart_regenerator>
+                        <class>paypalcartregenerator/observer</class>
+                        <method>cartRegenerator</method>
+                    </paypal_cancel_cart_regenerator>
+                </observers>
+            </controller_action_postdispatch_paypal_standard_cancel>
+        </events>
+    </frontend>
+</config>
