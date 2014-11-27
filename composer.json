@@ -1,5 +1,5 @@
 {
-    "name": "Mokadev/Mokadev_PaypalCartRegenerator",
+    "name": "mokadev/paypalCartRegenerator",
     "type": "magento-module",
     "homepage": "http://www.magentleman.com/panier-qui-se-vide-apres-annulation-paiement-paypal/",
     "description": "This extension regenerate the cart after a paypal payment cancelation.",
